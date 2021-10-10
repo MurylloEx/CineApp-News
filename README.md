@@ -22,16 +22,19 @@ Para instalar o aplicativo você deverá acessar o link na Google PlayStore: [CL
 ## Imagens do App
 
 <p align="center">
-  <img src="https://i.imgur.com/8GAG7CC.png" width="400" alt="App Screen" />
-  <img src="https://i.imgur.com/RzY4mAp.png" width="400" alt="App Screen" />
-  <img src="https://i.imgur.com/onwp3MJ.png" width="400" alt="App Screen" />
-  <img src="https://i.imgur.com/KzP0UUj.png" width="400" alt="App Screen" />
-  <img src="https://i.imgur.com/u5HzMgJ.png" width="400" alt="App Screen" />
+  <img src="https://i.imgur.com/8GAG7CC.png" width="250" alt="App Screen" />
+  <img src="https://i.imgur.com/RzY4mAp.png" width="250" alt="App Screen" />
+  <img src="https://i.imgur.com/onwp3MJ.png" width="250" alt="App Screen" />
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/KzP0UUj.png" width="250" alt="App Screen" />
+  <img src="https://i.imgur.com/u5HzMgJ.png" width="250" alt="App Screen" />
 </p>
 
 ## Metadata
 
-Autor: Muryllo Pimenta de Oliveira – muryllo.pimenta@upe.br<br>
+Muryllo Pimenta de Oliveira – muryllo.pimenta@upe.br<br>
 Entre em contato em caso de necessidade.
 
 Distributed under MIT license. See ``LICENSE`` for more informations.
