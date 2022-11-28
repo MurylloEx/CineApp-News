@@ -3,9 +3,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import { RoutesParamList } from './Types';
 import {
-  HomeScreen,
-  SearchScreen,
-  MovieScreen
+  Home,
+  Search,
+  Movie
 } from 'src/presentation/screens';
 
 const Stack = createStackNavigator<RoutesParamList>();
@@ -20,15 +20,15 @@ export const StackRoutes: FunctionComponent<StackRoutesProps> = () => {
     >
       <Stack.Screen
         name="Home"
-        component={HomeScreen}
+        component={Home}
       />
       <Stack.Screen
         name="Search"
-        component={SearchScreen}
+        component={Search}
       />
       <Stack.Screen
         name="Movie"
-        component={MovieScreen}
+        component={Movie}
       />
     </Stack.Navigator>
   );

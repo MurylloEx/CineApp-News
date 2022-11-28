@@ -1,9 +1,10 @@
-import React, { Fragment, FunctionComponent, PropsWithChildren } from 'react';
+import React, { FunctionComponent, PropsWithChildren } from 'react';
+import { BusinessProvider } from '../business/providers';
 
 export const DomainProvider: FunctionComponent<PropsWithChildren> = ({ children }) => {
   return (
-    <Fragment>
+    <BusinessProvider>
       {children}
-    </Fragment>
+    </BusinessProvider>
   );
 }

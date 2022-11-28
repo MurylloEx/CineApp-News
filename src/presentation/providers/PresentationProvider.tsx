@@ -1,10 +1,14 @@
-import React, { FunctionComponent, PropsWithChildren } from 'react';
+import React, { FunctionComponent } from 'react';
+import { StackRoutes } from 'src/presentation/routes';
 import { InfrastructureProvider } from 'src/infrastructure';
+import { NavigationProvider } from './NavigationProvider';
 
-export const PresentationProvider: FunctionComponent<PropsWithChildren> = ({ children }) => {
+export const PresentationProvider: FunctionComponent = () => {
   return (
     <InfrastructureProvider>
-      {children}
+      <NavigationProvider>
+        <StackRoutes />
+      </NavigationProvider>
     </InfrastructureProvider>
   );
 }

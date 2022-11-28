@@ -1,4 +1,4 @@
-import { DrawerNavigationProp } from '@react-navigation/drawer'
+import { DrawerNavigationProp } from '@react-navigation/drawer';
 
 export type RoutesParamList = {
   Home: undefined;
