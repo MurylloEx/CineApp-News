@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from 'react';
-import { QueryClient, QueryClientProvider } from 'react-query';
+import React, { FunctionComponent, PropsWithChildren } from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const QueryClientOptions = new QueryClient({
   defaultOptions: {
@@ -13,11 +13,9 @@ const QueryClientOptions = new QueryClient({
   }
 });
 
-export interface ReactQueryProviderProps {
-  children: React.ReactNode;
-}
+export interface ReactQueryProviderProps {}
 
-export const ReactQueryProvider: FunctionComponent<ReactQueryProviderProps> = ({ children }) => {
+export const ReactQueryProvider: FunctionComponent<PropsWithChildren<ReactQueryProviderProps>> = ({ children }) => {
   return (
     <QueryClientProvider client={QueryClientOptions}>
       {children}

@@ -1,15 +1,9 @@
-import { CoreProvider } from 'src/core';
+import { PresentationProvider } from 'src/presentation';
 
 export default function App() {
   return (
-    <CoreProvider>
+    <PresentationProvider>
       
-    </CoreProvider>
+    </PresentationProvider>
   );
 }
-
-export const App = () => (
-  <CoreProvider>
-    <AppRoutes />
-  </CoreProvider>
-);
