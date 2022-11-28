@@ -1,9 +1,10 @@
-import React, { Fragment, FunctionComponent, PropsWithChildren } from 'react';
+import React, { FunctionComponent, PropsWithChildren } from 'react';
+import { DomainProvider } from 'src/core/domain';
 
-export const CoreProvider: FunctionComponent<PropsWithChildren> = ({ children }) => {
+export const ApplicationProvider: FunctionComponent<PropsWithChildren> = ({ children }) => {
   return (
-    <Fragment>
+    <DomainProvider>
       {children}
-    </Fragment>
+    </DomainProvider>
   );
 }
