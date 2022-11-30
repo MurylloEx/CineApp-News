@@ -5,7 +5,7 @@ import { Text } from 'react-native';
 
 export interface HomeProps { }
 
-export const Home: FunctionComponent<HomeProps> = () => {
+export const HomeScreen: FunctionComponent<HomeProps> = () => {
   const route = useRoute<RouteProp<RoutesParamList, 'Home'>>();
   const navigation = useNavigation();
 

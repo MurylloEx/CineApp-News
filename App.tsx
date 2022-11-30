@@ -1,4 +1,4 @@
-import { PresentationProvider } from 'src/presentation';
+import { PresentationProvider } from 'src';
 
 const App = () => (
   <PresentationProvider />

@@ -4,7 +4,7 @@ import { RoutesParamList } from 'src/presentation/routes';
 
 export interface SearchProps { }
 
-export const Search: FunctionComponent<SearchProps> = () => {
+export const SearchScreen: FunctionComponent<SearchProps> = () => {
   const route = useRoute<RouteProp<RoutesParamList, 'Search'>>();
   const navigation = useNavigation();
 

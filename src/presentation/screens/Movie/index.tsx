@@ -4,7 +4,7 @@ import { RoutesParamList } from 'src/presentation/routes';
 
 export interface MovieProps { }
 
-export const Movie: FunctionComponent<MovieProps> = () => {
+export const MovieScreen: FunctionComponent<MovieProps> = () => {
   const route = useRoute<RouteProp<RoutesParamList, 'Movie'>>();
   const navigation = useNavigation();
 

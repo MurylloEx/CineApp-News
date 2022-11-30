@@ -1,12 +1,6 @@
 import axios, { AxiosInstance } from 'axios';
-import React, {
-  createContext,
-  FunctionComponent,
-  PropsWithChildren,
-  useCallback,
-  useMemo,
-  useRef
-} from 'react';
+import React, { createContext, useCallback, useMemo, useRef } from 'react';
+import { ProviderComponent } from 'src/core';
 
 export type AxiosInstanceSetter = (axiosInstance: AxiosInstance) => void;
 export type AxiosProviderValue = [AxiosInstance, AxiosInstanceSetter];
@@ -17,7 +11,7 @@ const AxiosDefaultInstance = axios.create({
 
 export const AxiosContext = createContext<AxiosProviderValue>([AxiosDefaultInstance, () => {}]);
 
-export const AxiosProvider: FunctionComponent<PropsWithChildren> = ({ children }) => {
+export const AxiosProvider: ProviderComponent = ({ children }) => {
   const axiosRef = useRef<AxiosInstance>(AxiosDefaultInstance);
 
   const setAxios = useCallback((axiosInstance: AxiosInstance) => {

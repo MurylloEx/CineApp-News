@@ -1,7 +1,8 @@
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import React, { FunctionComponent, PropsWithChildren } from 'react';
+import { ProviderComponent } from 'src/core';
 
-export const NavigationProvider: FunctionComponent<PropsWithChildren> = ({ children }) => {
+export const NavigationProvider: ProviderComponent = ({ children }) => {
   return (
     <NavigationContainer>
       {children}
