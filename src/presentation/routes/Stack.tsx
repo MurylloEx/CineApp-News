@@ -1,14 +1,14 @@
 import React, { FunctionComponent } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { RoutesParamList } from './Routes';
+import { RoutesParams } from './Routes';
 import {
   HomeScreen,
   SearchScreen,
   MovieScreen
 } from 'src/presentation/screens';
 
-const Stack = createStackNavigator<RoutesParamList>();
+const Stack = createStackNavigator<RoutesParams>();
 
 export interface StackRoutesProps { }
  

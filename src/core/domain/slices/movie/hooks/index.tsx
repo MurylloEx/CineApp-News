@@ -1,1 +1,1 @@
-export const Hooks = [];
+export * from './use-movies.hook';

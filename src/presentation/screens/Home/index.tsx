@@ -1,12 +1,13 @@
-import React, { Fragment, FunctionComponent } from 'react';
-import { RouteProp, useNavigation, useRoute } from '@react-navigation/core';
-import { RoutesParamList } from 'src/presentation/routes';
 import { Text } from 'react-native';
+import React, { Fragment, FunctionComponent } from 'react';
+import { useNavigation, useRoute } from '@react-navigation/core';
+
+import { HomeRouteProp } from 'src/presentation/routes';
 
 export interface HomeProps { }
 
 export const HomeScreen: FunctionComponent<HomeProps> = () => {
-  const route = useRoute<RouteProp<RoutesParamList, 'Home'>>();
+  const route = useRoute<HomeRouteProp>();
   const navigation = useNavigation();
 
   return (

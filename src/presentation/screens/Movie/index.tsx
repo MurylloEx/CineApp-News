@@ -1,11 +1,12 @@
 import React, { Fragment, FunctionComponent } from 'react';
-import { RouteProp, useNavigation, useRoute } from '@react-navigation/core';
-import { RoutesParamList } from 'src/presentation/routes';
+import { useNavigation, useRoute } from '@react-navigation/core';
+import { MovieRouteProp } from 'src/presentation/routes';
 
 export interface MovieProps { }
 
 export const MovieScreen: FunctionComponent<MovieProps> = () => {
-  const route = useRoute<RouteProp<RoutesParamList, 'Movie'>>();
+  const route = useRoute<MovieRouteProp>();
+
   const navigation = useNavigation();
 
   return (
